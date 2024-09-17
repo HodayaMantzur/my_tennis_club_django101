@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 WSGI config for my_tennis_club project.
 
@@ -15,21 +14,3 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_tennis_club.settings')
 
 application = get_wsgi_application()
-=======
-"""
-WSGI config for my_tennis_club project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
-"""
-
-import os
-
-from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_tennis_club.settings')
-
-application = get_wsgi_application()
->>>>>>> 6a028d562591f51c2fd9f4d8900b788561431771
