@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <body>
@@ -21,4 +22,29 @@
   
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Courts in my club</h1> 
+  
+<ul>
+    {% for court in courts %}
+      <li>
+        Court: {{ court.number }}. 
+        <input type="checkbox" {% if court.is_occupied %}checked{% endif %} disabled>
+        {% if court.is_occupied %}
+          Time: {{ court.time_of_occupation|date:"H:i" }}
+        {% else %}
+          Time: N/A
+        {% endif %}
+        <a href="reserve/{{ court.id }}">Reserve</a>
+      </li>
+    {% endfor %}
+  </ul>
+  
+
+</body>
+>>>>>>> 6a028d562591f51c2fd9f4d8900b788561431771
 </html>
